@@ -24,9 +24,10 @@ function init() {
 }
 
 function loadCrown(w) {
+  var height = crown.viewBox.baseVal.height / factor
   var crown = document.getElementById('crown');
   crown.width = w;
-  crown.style.top = (window.innerHeight/2 - crown.height*.5) + 'px';
+  crown.style.top = (window.innerHeight/2 - height*.5) + 'px';
 }
 
 function loadSecondHand(w) {
