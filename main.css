@@ -4,12 +4,19 @@ body{
   text-align: center;
   font-family: 'Cinzel', serif;
 }
+#Titling {
+  margin-top: 12vh;
+}
+
 h1, h2 {
   font-weight: normal;
+  line-height: 1.2rem;
+}
+h1 {
+  font-size: 3em;
 }
 
 #Clock {
-height: 80vh;
 display: none;
 }
 #Clock img{
@@ -18,4 +25,10 @@ display: none;
 #Clock svg {
   overflow: visible;
   position: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 5em;
+  }
 }

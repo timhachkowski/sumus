@@ -16,11 +16,16 @@ var title = document.getElementById('Titling');
 var crown = document.getElementById('crown');
 
 function init() {
-  loadCrown(23);
-  loadSecondHand(23);
-  loadHourHand(23);
-  loadMinuteHand(23);
-  title.style.marginLeft = 23/2+"px";
+  if (window.width < 768) {
+    w = 32;
+  } else {
+    w = 23;
+  }
+  loadCrown(w);
+  loadSecondHand(w);
+  loadHourHand(w);
+  loadMinuteHand(w);
+  title.style.marginLeft = w/2+"px";
   clock.style.display = 'inherit';
 }
 
