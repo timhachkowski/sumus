@@ -1,0 +1,19 @@
+body{
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+}
+h1, h2 {
+  font-weight: normal;
+}
+
+#Clock {
+height: 80vh;
+}
+#Clock img{
+  position: fixed;
+}
+#Clock svg {
+  overflow: visible;
+}
