@@ -10,6 +10,7 @@ h1, h2 {
 
 #Clock {
 height: 80vh;
+display: none;
 }
 #Clock img{
   position: fixed;

@@ -5,6 +5,7 @@ var ms = today.getMilliseconds();
 var s = today.getSeconds();
 var m = today.getMinutes();
 var h = today.getHours();
+var clock = document.getElementById('Clock');
 var minute = document.getElementById('minute-hand');
 var hour = document.getElementById('hour-hand');
 var min = document.getElementById('minute');
@@ -18,7 +19,8 @@ function init() {
   loadSecondHand(23);
   loadHourHand(23);
   loadMinuteHand(23);
-  title.style.marginLeft = 23/2+"px"
+  title.style.marginLeft = 23/2+"px";
+  clock.style.display = 'inherit';
 }
 
 function loadCrown(w) {
