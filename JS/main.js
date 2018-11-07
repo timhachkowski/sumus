@@ -13,6 +13,7 @@ var hr = document.getElementById('hour');
 var sec = document.getElementById('second');
 var second = document.getElementById('second-hand');
 var title = document.getElementById('Titling');
+var crown = document.getElementById('crown');
 
 function init() {
   loadCrown(23);
@@ -24,9 +25,10 @@ function init() {
 }
 
 function loadCrown(w) {
-  var crown = document.getElementById('crown');
-  crown.width = w;
-  crown.style.top = (window.innerHeight/2 - crown.height*.5) + 'px';
+  var height = crown.viewBox.baseVal.height / factor
+  crown.style.width = w;
+  document.getElementById('Crown').style.transformOrigin = "50%";
+  crown.style.top = (window.innerHeight/2 - height*.5) + 'px';
 }
 
 function loadSecondHand(w) {
