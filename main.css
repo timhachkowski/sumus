@@ -1,6 +1,17 @@
 body{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  margin-left: 0;
+  overflow: hidden;
+  height: 100vh;
+  min-height: 100vh;
   background-color: black;
-  background-image: url(IMG/dark-background.jpg);
+  background: url(IMG/dark-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   color: white;
   text-align: center;
@@ -62,6 +73,48 @@ display: none;
   overflow: visible;
   position: fixed;
 }
+
+#sign-up {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 5vw 32px 5vw;
+  background: rgba(0,0,0,.6);
+  background-blend-mode: multiply;
+}
+
+#sign-up p {
+  padding-bottom:16px;
+}
+
+#sign-up form {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+#sign-up form input {
+  min-width: 120px;
+}
+
+input[type="button" i], input[type="submit" i] {
+  border: 0;
+  background: none;
+  color: white;
+  font-family: Cinzel, serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  opacity: .8;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="button" i], input[type="submit" i]:hover {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
 a {
   color: white;
   font-family: Cinzel, serif;
