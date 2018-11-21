@@ -9,38 +9,39 @@
   </head>
   <body>
 
-        <footer style="background-color: white; padding: 16px;">
-          <p id="name" class="Name" style="font-weight: bold;font-family: sans-serif;
-          font-size: 1.2em;
-          line-height: 0.1em;">John Smith</p>
-          <p id="position" style="font-family: sans-serif;
-          font-size: 1em;
-          line-height: 0.1em;margin-bottom: 8px;" class="Title">Asset Manager</p>
-          <div id="company" style="display: block; height: auto;overflow:hidden;">
-            <ul id="info" style="margin-left: 8px;
-            height: auto;
-            display: inline-block;
-            list-style: none;
-            padding-left: 8px;
-            font-family: monospace;
-            font-weight: bold;">
-              <li>C <a id="phone" style="font-family: sans-serif; font-weight: normal;
-              color: black;
-              opacity: 0.8;" href="tel:14038947933" alt="Call 14038947933" class="Phone Number">1.403.555.7933</a></li>
-              <li>W <a style="font-family: sans-serif; font-weight: normal;
-              color: black;
-              opacity: 0.8;" href="https://www.sumus.ca" alt="Visit Sumus Website">www.sumus.ca</a></li>
-              <li>E <a id="email" style="font-family: sans-serif;font-weight: normal;
-              color: black;
-              opacity: 0.8;" href="mailto:timothy@sumus.ca">timothy@sumus.ca</a></li>
-            </ul>
-            <img src="https://www.sumus.ca/Logo-background.jpg" height="90px" alt="Sumus Logo" style="float:left;">
-            </div>
-            <hr>
-            <a id="promo" style="display: block;font-family: sans-serif; font-weight: normal;
-            color: black;
-            opacity: 0.8;" href="sumus.ca">Subscribe to Sumus Updates Here</a>
-        </footer>
+    <div style="background-color: white; padding: 16px;">
+      <p id="name" class="Name" style="font-weight: bold;font-family: sans-serif;
+      font-size: 1.2em;
+      line-height: 0.1em;">John Smith</p>
+      <p id="position" style="font-family: sans-serif;
+      font-size: 1em;
+      line-height: 0.1em;margin-bottom: 8px;" class="Title">Asset Manager</p>
+      <div id="company" style="display: inline-grid; grid-template-columns: 100px 180px; grid-gap:8px; height: auto;">
+        <div id="logo">
+          <img src="https://www.sumus.ca/IMG/email-sig-logo.png" height="90px" alt="Sumus Logo">
+        </div>
+        <div id="info" style="    height: auto;
+        display: inline-block;
+        align-self: center;
+        list-style: none;
+        font-family: monospace;
+        font-weight: bold;">
+          <p style="margin:1px;">C <a id="phone" style="font-family: sans-serif; font-weight: normal;
+          color: black; margin: 1px;
+          opacity: 0.8;" href="tel:14038947933" alt="Call 14038947933" class="Phone Number">1.403.555.7933</a></p>
+          <p style="margin:1px;">W <a style="font-family: sans-serif; font-weight: normal;
+          color: black; margin:1px;
+          opacity: 0.8;" href="https://www.sumus.ca" alt="Visit Sumus Website">www.sumus.ca</a></p>
+          <p style="margin:1px;">E <a id="email" style="font-family: sans-serif;font-weight: normal;
+          color: black; margin: 1px;
+          opacity: 0.8;" href="mailto:timothy@sumus.ca">timothy@sumus.ca</a></p>
+        </div>
+        </div>
+        <hr>
+        <a id="promo" style="display: inline;font-family: sans-serif; font-weight: normal;
+        color: black;
+        opacity: 0.8;" href="sumus.ca">Subscribe to Sumus Updates Here</a>
+    </div>
 
 
     <h1>Sumus Email Signature Auto Generator</h1>
