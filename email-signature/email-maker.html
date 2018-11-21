@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vtl6zex.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+
+        <footer style="background-color: white; padding: 16px;">
+          <p id="name" class="Name" style="font-weight: bold;font-family: sans-serif;
+          font-size: 1.2em;
+          line-height: 0.1em;">John Smith</p>
+          <p id="position" style="font-family: sans-serif;
+          font-size: 1em;
+          line-height: 0.1em;margin-bottom: 8px;" class="Title">Asset Manager</p>
+          <div id="company" style="display: block; height: auto;overflow:hidden;">
+            <ul id="info" style="margin-left: 8px;
+            height: auto;
+            display: inline-block;
+            list-style: none;
+            padding-left: 8px;
+            font-family: monospace;
+            font-weight: bold;">
+              <li>C <a id="phone" style="font-family: sans-serif; font-weight: normal;
+              color: black;
+              opacity: 0.8;" href="tel:14038947933" alt="Call 14038947933" class="Phone Number">1.403.555.7933</a></li>
+              <li>W <a style="font-family: sans-serif; font-weight: normal;
+              color: black;
+              opacity: 0.8;" href="https://www.sumus.ca" alt="Visit Sumus Website">www.sumus.ca</a></li>
+              <li>E <a id="email" style="font-family: sans-serif;font-weight: normal;
+              color: black;
+              opacity: 0.8;" href="mailto:timothy@sumus.ca">timothy@sumus.ca</a></li>
+            </ul>
+            <img src="https://www.sumus.ca/Logo-background.jpg" height="90px" alt="Sumus Logo" style="float:left;">
+            </div>
+            <hr>
+            <a id="promo" style="display: block;font-family: sans-serif; font-weight: normal;
+            color: black;
+            opacity: 0.8;" href="sumus.ca">Subscribe to Sumus Updates Here</a>
+        </footer>
+
+
+    <h1>Sumus Email Signature Auto Generator</h1>
+    <p class="century">Enter your details, click generate, then copy and paste the created email signature into your email provider settings.</p>
+    <div class="form">
+      <form name="info">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" placeholder="John Smith" required>
+        <label for="position">Job Title</label>
+        <input type="text" name="position" placeholder="Asset Manager" required>
+        <label for="phone">Cellphone Number</label>
+        <input type="text" name="phone" placeholder="4035557933" maxlength="10" required>
+        <label for="email">Email Address</label>
+        <input type="text" name="email" placehoder="john@sumus.ca" required>
+        <label for="promo">Promotional Link</label>
+        <input type="text" name="promo" placeholder="Subscribe You Hoser">
+        <label for="link">Promo Link Destination</label>
+        <input type="url" name="link" placeholder="https://www.sumus.ca" required>
+        <input type="button" name="" onclick="generate()" value="Generate Offical Sumus E-Signature">
+      </form>
+    </div>
+
+    <script type="text/javascript" src="generate.js"></script>
+  </body>
+</html>
